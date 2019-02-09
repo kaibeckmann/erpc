@@ -207,6 +207,7 @@ public:
     virtual node_vector &get_children();
     uint32_t get_line() { return m_line; }
     void set_line(uint32_t line) { m_line = line; }
+    virtual ~Node() = default;
 };
 
 // node with children
